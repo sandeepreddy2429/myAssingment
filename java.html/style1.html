@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .hi{
+        color: aqua;
+        background-color: brown
+    }
+    .blue{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: chartreuse;
+        background-color: rgb(19, 158, 165);
+    }  
+</style>
+<body>
+    
+    <h1>CHANTI Reddy</h1>
+    <button id="red_1">submit</button>
+    <button id="blue_1">save</button>
+</body>
+<script>
+    document.querySelector("#red_1").addEventListener("click",()=>{
+        document.querySelector("h1").classList.remove("blue");
+        document.querySelector("h1").classList.add("hi");
+    })
+    document.querySelector("#blue_1").addEventListener("click",()=>{
+        document.querySelector("h1").classList.remove("hi");
+        document.querySelector("h1").classList.add("blue");
+    })
+     
+
+
+</script>
+</html>

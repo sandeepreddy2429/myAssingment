@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div>    
+    <div id="msg_list" class="messagelist"></div>
+</div>
+<div class="div_1">
+    <textarea  name="" id="msg_txt" cols="30" rows="10" placeholder="enter message"></textarea>
+  <button id="btn">Send</button>
+</div>
+</body>
+<script>
+              document.querySelector("#msg_txt").addEventListener('keyup', (ele) => {
+
+    if (event.keyCode == 13) {  
+        sendMessage();
+    }
+});
+
+       document.getElementById("btn").addEventListener('keyup',()=>{
+        sendMessage();
+       })
+</script>
+</html>

@@ -1,0 +1,33 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class sample{
+            name = "";
+            age = "";
+            printdetails(){
+                console.log(this.name,this.age);
+            }
+            getinputvalueandprint(){
+                let val = document.getElementById("input").value;
+                console.log(val);
+            }
+
+        }
+        let sampleobj = new sample();
+        sampleobj .age = "35";
+        sampleobj .name = "sandeep";
+       
+        sampleobj.printdetails();
+    </script>
+    <input type="text" id="input">
+    
+    <button onclick="sampleobj.getinputvalueandprint()">click</button>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+ 
+<script> 
+
+    var imgArray = ["1.jpg,2.jpg,3.jpg,4.jpg"];
+    var startcount = 0;
+      function changeimg(){ 
+       if (startcount >= imgArray.length){
+           startcount = 0;
+       }
+       let imgname = imgArray[startcount];
+       document.querySelector("#img").src = "images/"+imgname;
+       startcount++;
+      }
+      setInterval(()=>{changeimg()},2000);
+
+   </script>
+<body>  
+
+ 
+      <img id="img" src="images/1.jpg" alt="">
+</body>
+</html> 

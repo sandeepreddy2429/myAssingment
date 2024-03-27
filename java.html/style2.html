@@ -1,0 +1,42 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+  <style>
+    .red{
+        color: red;
+    }
+    .blue{
+        color: aqua;
+    }
+
+
+  </style>
+ <body>
+    
+ 
+    <h1 class="h1">this is sandeep reddy</h1>
+    <div>
+        <button class="btn">red or blue</button>
+    </div>
+ </body>
+ <script>
+          var bgclass = 'red';
+          document.querySelector(".btn").addEventListener("click",()=>{
+            if (bgclass== "red"){
+                bgclass= "blue";
+             document.querySelector(".h1").classList.remove("red");
+             document.querySelector(".h1").classList.add("blue");
+            }
+            else{
+                bgclass = 'red';
+                document.querySelector(".h1").classList.remove("blue");
+                document.querySelector(".h1").classList.add("red");
+            }
+          })
+ </script>
+
+ </html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class sample{
+            name = "";
+            age = "";
+            printdetails(){
+                console.log(this.name,this.age);
+            }
+
+        }
+        let sampleobj = new sample();
+        sampleobj .age = "35";
+        sampleobj .name = "sandeep";
+       
+        sampleobj.printdetails();
+    </script>
+    
+    <button onclick="sampleobj.printdetails()">click</button>
+</body>
+</html>

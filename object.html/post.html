@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    
+</head>
+<script>
+   async function postdata(){
+    let data={
+        "name":"sandeep reddy",
+        "job":"web developer"
+        }
+ 
+     let response = await fetch("https://reqres.in/api/users",{"method":"post","body":JSON.stringify(data)});
+     let jsondata=await response.json();
+     console.log(jsondata);
+   }
+</script>
+<body>
+    <button onclick="postdata()"> server </button>
+     <select name="" id="">
+        <option value="">hi</option>
+        <option value="">hlo</option>
+     </select>
+</body>
+</html>
